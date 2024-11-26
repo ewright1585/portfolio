@@ -1,0 +1,42 @@
+:root {
+  /* Primary Color Variables */
+  --primary: #D47F52;
+  --primary-lighten-1: #e8bba4;
+  --primary-lighten-2: #fdf8f5;
+  --primary-lighten-3: white;
+  --primary-darken-1: #9a4e26;
+  --primary-darken-2: #482512;
+  --primary-darken-3: black;
+  /* Secondary Color Variables */
+  --secondary: #A8C2CF;
+  --secondary-lighten-1: #eaf0f3;
+  --secondary-lighten-2: white;
+  --secondary-darken-1: #6694ab;
+  --secondary-darken-2: #3d5e6e;
+  --secondary-darken-3: #19262c;
+  --secondary-darken-4: black;
+  /* Font Size Variables */
+  --font-size--3: 4px;
+  --font-size--2: 8px;
+  --font-size--1: 12px;
+  --font-size--0: 16px;
+  --font-size-1: 24px;
+  --font-size-2: 32px;
+  --font-size-3: 40px;
+  --font-size-4: 48px;
+  --font-size-5: 56px;
+  /* Spacing Unit Variables */
+  --spacing-unit--3: 0.25rem;
+  --spacing-unit--2: 0.5rem;
+  --spacing-unit--1: 0.75rem;
+  --spacing-unit--0: 1rem;
+  --spacing-unit-1: 1rem;
+  --spacing-unit-2: 2rem;
+  --spacing-unit-3: 3rem;
+  --spacing-unit-4: 4rem;
+  --spacing-unit-5: 5rem;
+}
+
+body {
+  background: var(--primary-darken-1);
+}/*# sourceMappingURL=style.css.map */

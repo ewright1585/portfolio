@@ -1,0 +1,6 @@
+@import "../css/partials/_variables.scss";
+@import "../css/partials/_mixins.scss";
+
+body{
+    background: var(--primary-darken-1);
+}
