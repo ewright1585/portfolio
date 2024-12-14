@@ -1,14 +1,12 @@
+// @import "~bootstrap/scss/_variables.scss";
+
 $primary: #D47F52;
 $secondary: #A8C2CF;
 $font-size: 16px;
 $spacing-unit: 1rem;
-// Color scale generated in :root inside style.css
+
+$primary-dark-trans-rgb: linear-gradient(0deg, rgba(72,37,18,0) 0%, rgba(72,37,18,0.5) 53%);
+// Variables generated in :root inside style.css
 
 
-
-
-// // Spacing
-// $sp-xs:.25rem;
-// $sp-sm: .5rem;
-// $sp-md: .75rem;
-// $sp-lg: 1rem;
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";

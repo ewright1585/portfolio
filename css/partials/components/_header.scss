@@ -1,0 +1,10 @@
+.navbar{
+    background: rgba(72, 37, 18, .5);
+    background: $primary-dark-trans-rgb;
+ .navbar-brand, .nav-link{
+    color: #fff;
+ }
+ .nav-link{
+    cursor: pointer;
+ }
+}

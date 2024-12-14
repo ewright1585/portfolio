@@ -1,6 +1,23 @@
 @import "../css/partials/_variables.scss";
 @import "../css/partials/_mixins.scss";
+@import "../css/partials/pages/_home.scss";
+
+/*Base (Global) Styles*/
+/*Layout Styles*/
+/*Typography Styles*/
+/*Component Styles*/
+/*Utilities Styles*/
+/*States & Themes Styles*/
+/*Media Queries*/
+/*Overrides*/
 
 body{
-    background: var(--primary-darken-1);
+  min-height: 100dvh;
+}
+
+section.home, section.projects, section.contact{
+    min-height: 100dvh;
+    // background: var(--primary-lighten-1);
+    place-content: center;
+    text-align: center;
 }

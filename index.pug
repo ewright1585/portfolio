@@ -8,14 +8,13 @@ html(lang="en")
         link(rel="stylesheet", href="css/style.css")
         title Frontend Dev - E. Wright
     body 
-        include ./components/header.pug
+        include ./components/header/header.pug
         main 
-            .container 
-                h1
-                    span.fa.fa-home 
-                    span Hello World
-
-        footer
+            include ./pages/home.pug
+            include ./pages/projects.pug
+            include ./pages/contact.pug
+            include ./pages/quote.pug
+        include ./components/footer/footer.pug
             script(src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js")
             script(src="index.js")  
         
