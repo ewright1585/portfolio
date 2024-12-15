@@ -20,3 +20,11 @@ section.home, section.projects, section.contact{
     place-content: center;
     text-align: center;
 }
+
+.project-grid{
+    grid-gap: 1rem;
+    display: grid;
+    @media(min-width: 768px ){
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

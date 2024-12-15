@@ -1,14 +1,36 @@
-.col-lg-8.mb-3
-    .card.text-bg-light.bg-primary-subtle.shadow
-        .card-header.text-start
-            | Featured
-        .card-body
-            .row 
-                .col-md-4.col-xl-5
-                    img.img-fluid.rounded.wireframe(src="./assets/images/wireframe.jpg", alt="")
-                .col-md-8.col-xl-7.text-start
-                    h5.card-title Special title treatment
-                    p.card-text With supporting text below as a natural lead-in to additional content.
-                    a.btn.btn-primary(href='#') Go somewhere
-        .card-footer.text-body-secondary.text-end
-            span.badge.rounded-pill.text-bg-secondary UI Design
+
+//- .card.text-bg-light.bg-primary-subtle.shadow
+//-     //- .card-header.text-start
+//-     //-     span.project-type-icon.bg-secondary-subtle.p-1.rounded.me-2
+//-     //-         .fa-solid.fa-pencil.text-secondary-emphasis 
+//-     //-     span.project-type-label UI Design
+//-     .card-header.text-start
+//-         span.project-type-icon.bg-secondary-subtle.p-1.rounded.me-2
+//-             .fa-solid.fa-.text-secondary-emphasis 
+//-         span.project-type-label UI Design + Development
+//-     .card-body
+//-         .row 
+//-             .col-md-4.col-xl-5.mb-3.mb-md-0
+//-                 img.img-fluid.rounded.wireframe(src="./assets/images/wireframe.jpg", alt="")
+//-             .col-md-8.col-xl-7.text-start
+//-                 h3.h5.card-title Special title treatment
+//-                 p.card-text With supporting text below as a natural lead-in to additional content.
+//-                 a.btn.btn-primary(href='#') Go somewhere
+//-     .card-footer.text-body-secondary.text-end
+//-         span.badge.rounded-pill.text-bg-secondary Ecommerce
+.card.project-card.shadow.bg-primary-subtle
+    img.card-img-top.wireframe(src="./assets/images/wireframe.jpg", alt="")
+    .card-img-overlay.text-start
+        h3.h6.card-title
+            span.project-type-icon.bg-secondary-subtle.p-1.rounded.me-2
+                .fa-solid.fa-pencil.text-secondary-emphasis 
+            span.project-type-label UI Design
+        p.card-text
+            small Last updated 3 mins ago
+    .card-body
+        h5.card-title Card title
+        p.card-text
+        | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+    .card-body
+        a.card-link(href='#') Card link
+        a.card-link(href='#') Another link

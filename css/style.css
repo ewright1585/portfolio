@@ -23995,4 +23995,14 @@ section.home, section.projects, section.contact {
   min-height: 100dvh;
   place-content: center;
   text-align: center;
+}
+
+.project-grid {
+  grid-gap: 1rem;
+  display: grid;
+}
+@media (min-width: 768px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }/*# sourceMappingURL=style.css.map */
