@@ -23970,6 +23970,18 @@ textarea.form-control-lg {
   --spacing-unit-5: 5rem;
 }
 
+header {
+  background: rgba(72, 37, 18, 0.5);
+  background: linear-gradient(0deg, rgba(72, 37, 18, 0) 0%, rgba(72, 37, 18, 0.5) 53%);
+}
+
+.navbar .navbar-brand, .navbar .nav-link {
+  color: #fff;
+}
+.navbar .nav-link {
+  cursor: pointer;
+}
+
 #bg-video {
   position: fixed;
   right: 0;
@@ -24005,4 +24017,10 @@ section.home, section.projects, section.contact {
   .project-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.project-card-img-overlay {
+  background: rgb(72, 37, 18);
+  background: linear-gradient(0deg, rgba(72, 37, 18, 0) 0%, rgba(72, 37, 18, 0.5) 53%);
+  z-index: 0;
 }/*# sourceMappingURL=style.css.map */

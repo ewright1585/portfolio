@@ -1,5 +1,6 @@
 @import "../css/partials/_variables.scss";
 @import "../css/partials/_mixins.scss";
+@import "../css/partials/components/_header.scss";
 @import "../css/partials/pages/_home.scss";
 
 /*Base (Global) Styles*/
@@ -27,4 +28,10 @@ section.home, section.projects, section.contact{
     @media(min-width: 768px ){
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+.project-card-img-overlay{
+    background: rgb(72,37,18);
+    background: linear-gradient(0deg, rgba(72,37,18,0) 0%, rgba(72,37,18,0.5) 53%);
+    z-index: 0;
 }

@@ -1,10 +1,3 @@
 console.log('index.js is running');
-
-let headerNav = document.querySelector("#headerNav");
-let headerNavLinks = document.querySelectorAll("#headerNav li a");
-
-headerNavLinks.forEach((link) => {
-    link.addEventListener("click", function () {
-        headerNav.classList.remove("show");
-    });
-});
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
