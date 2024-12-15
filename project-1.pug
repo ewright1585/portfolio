@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="../node_modules/bootstrap/dist/css/bootstrap.min.css")
+        link(rel="stylesheet", href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css")
+        link(rel="stylesheet", href="css/style.css")
+        title Frontend Dev - E. Wright
+    body 
+        include ./components/header/header.pug
+        main 
+            video#bg-video(autoplay='' muted='' loop='')
+                source(src='https://videos.pexels.com/video-files/19457509/19457509-uhd_3840_2160_30fps.mp4' type='video/mp4')
+                | Your browser does not support the video tag.
+            .container
+                .row.justify-content-center.pt-5
+                    .col-lg-8.mb-5.page-intro 
+                        .text-content.text-light
+                            h2 Projects
+                            p A curated gallery of my recent projects
+            script(src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js")
+            script(src="index.js")  

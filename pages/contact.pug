@@ -1,4 +1,12 @@
 section.contact#contact
-    .container.hero-section
-        .text-content
-        h2.text-light Contact
+    .container
+         .row.justify-content-center
+            .col-lg-8.mb-5.page-intro 
+                .text-content.text-light
+                    h2 Contact
+                    p I'm excited to connect. Please drop a few details below to start the conversation.
+            .col-lg-6.mb-3
+                .card.text-bg-light.bg-primary-subtle.shadow
+                    .card-body
+                        include ../components/forms/contact.pug
+
