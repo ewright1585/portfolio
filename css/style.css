@@ -24018,6 +24018,11 @@ section.home, section.projects, section.contact {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media (min-width: 1200px) {
+  .project-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 
 .project-card-img-overlay {
   background: rgb(72, 37, 18);
