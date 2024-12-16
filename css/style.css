@@ -23991,6 +23991,35 @@ header {
   z-index: -1;
 }
 
+.home-main-img-wrapper {
+  height: 300px;
+  overflow: hidden;
+}
+.home-main-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+@media (min-width: 992px) {
+  .home-main-img-wrapper {
+    height: 600px;
+  }
+  .accent-card-left, .accent-card-right {
+    position: absolute;
+  }
+  .accent-card-left {
+    bottom: -4rem;
+    left: -1rem;
+  }
+  .accent-card-right {
+    bottom: 5rem;
+    right: -1rem;
+  }
+}
 /*Base (Global) Styles*/
 /*Layout Styles*/
 /*Typography Styles*/
