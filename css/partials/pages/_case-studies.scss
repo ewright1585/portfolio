@@ -1,0 +1,15 @@
+.case-study-grid{
+    display: grid;
+    gap:$grid-gap; 
+    margin-top: 4rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.case-study-hero-img-wrapper{
+    background-image: url('https://images.pexels.com/photos/6146929/pexels-photo-6146929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+   height: 500px;
+   max-height: 500px;
+   background-size: cover;
+   background-position: center;
+   grid-column: 1/5;
+}

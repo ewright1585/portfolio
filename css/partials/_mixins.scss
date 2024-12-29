@@ -107,7 +107,17 @@
 
 
   
+@include generate-css-variables(5);
   
-
-  @include generate-css-variables(5);
-  
+// Image sizer Mixin
+@mixin img-sizer ($w: 100%, $h: auto){
+  width: $w;
+  height: $h;
+  overflow: hidden;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
