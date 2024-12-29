@@ -34,8 +34,8 @@ section.home, section.projects, section.contact{
     }
 }
 
-.project-card-img-overlay{
-    background: rgb(72,37,18);
-    background: linear-gradient(0deg, rgba(72,37,18,0) 0%, rgba(72,37,18,0.5) 53%);
-    z-index: 0;
+.overlay{
+    border-image-source: $linear-gradient-primary-dark;
+    border-image-slice: fill 1;
 }
+

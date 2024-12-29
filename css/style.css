@@ -23972,7 +23972,7 @@ textarea.form-control-lg {
 
 header {
   background: rgba(72, 37, 18, 0.5);
-  background: linear-gradient(0deg, rgba(72, 37, 18, 0) 0%, rgba(72, 37, 18, 0.5) 53%);
+  background: linear-gradient(0deg, rgba(72, 37, 18, 0.95) 0%, rgba(72, 37, 18, 0) 75%);
 }
 
 .navbar .navbar-brand, .navbar .nav-link {
@@ -24024,7 +24024,7 @@ header {
   display: grid;
   gap: 1rem;
   margin-top: 4rem;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .case-study-hero-img-wrapper {
@@ -24033,9 +24033,31 @@ header {
   max-height: 500px;
   background-size: cover;
   background-position: center;
-  grid-column: 1/5;
+  grid-column: 1/3;
+  display: grid;
+  place-content: center;
 }
 
+.case-study-problem-statement-wrapper {
+  margin-block: 5rem;
+  padding: 1rem;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0) 75%);
+  grid-column: 1/3;
+}
+
+@media (min-width: 768px) {
+  .case-study-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .case-study-hero-img-wrapper, .case-study-problem-statement-wrapper {
+    grid-column: 1/5;
+  }
+  .case-study-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 /*Base (Global) Styles*/
 /*Layout Styles*/
 /*Typography Styles*/
@@ -24069,8 +24091,7 @@ section.home, section.projects, section.contact {
   }
 }
 
-.project-card-img-overlay {
-  background: rgb(72, 37, 18);
-  background: linear-gradient(0deg, rgba(72, 37, 18, 0) 0%, rgba(72, 37, 18, 0.5) 53%);
-  z-index: 0;
+.overlay {
+  border-image-source: linear-gradient(0deg, rgba(72, 37, 18, 0.95) 0%, rgba(72, 37, 18, 0) 75%);
+  border-image-slice: fill 1;
 }/*# sourceMappingURL=style.css.map */
