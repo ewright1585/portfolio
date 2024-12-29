@@ -36,7 +36,14 @@ html(lang="en")
                             .card-body.text-light
                                 h2 The Problem
                                 p.lead Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, quisquam eum cupiditate labore facere rem.
-                    
+                    .case-study-project-goals-wrapper 
+                        h2.text-center.mx-auto Project Goals 
+                        .case-study-project-goals-grid 
+                            -for(i=0; i<4; i++)
+                                .project-goal.card.bg-primary-subtle 
+                                    .card-body 
+                                        h3.project-goal-title Project Goal
+                                        p.project-goal-description Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ipsa.
 
             script(src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js")
             script(src="index.js")  
