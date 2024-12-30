@@ -1,6 +1,6 @@
 
 
-.case-study-grid, .case-study-hero-img-wrapper, .case-study-project-goals-grid{
+.case-study-grid, .case-study-hero-img-wrapper, .case-study-project-goals-grid, .pain-points-highlights-wrapper{
     display: grid;
     gap: $grid-gap; 
 }
@@ -11,8 +11,9 @@
     
 }
 
-.case-study-project-goals-wrapper{
+.case-study-project-goals-wrapper, .case-study-design-process-wrapper {
     margin-bottom: $y-axis-section-spacing;
+    grid-column: 1/3;
   
 }
 
@@ -30,7 +31,7 @@
 .case-study-problem-statement-wrapper {
     margin-block: 5rem;
     padding: 1rem;
-    background: $linear-gradient-light;
+    // background: $linear-gradient-light;
     grid-column: 1/3;
 }
 
@@ -38,6 +39,13 @@
     @include img-sizer ($w: 100%, $h: auto);
     aspect-ratio: 2/1;
 }
+
+#designprocessContent li{
+    background: none;
+    border-bottom: none;
+}
+
+
 
 
 // Media Queries
@@ -50,10 +58,13 @@
         grid-template-columns: repeat(2, 1fr);
     
     }
+    .pain-points-highlights-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+            }
 }
 
 @media(min-width:992px){
-    .case-study-hero-img-wrapper, .case-study-problem-statement-wrapper, .case-study-project-goals-wrapper{
+    .case-study-hero-img-wrapper, .case-study-problem-statement-wrapper, .case-study-project-goals-wrapper, .case-study-design-process-wrapper {
         grid-column: 1/5;
 
     }
@@ -72,16 +83,18 @@
         align-items: self-start;
     }
 
-    .problem-statement-img-wrapper, .problem-statement-text-content{
-        grid-row: 1/2;
-    } 
+    // .problem-statement-img-wrapper, .problem-statement-text-content{
+    //     grid-row: 1/2;
+    // } 
 
     .problem-statement-img-wrapper{
-        grid-column: 1/4;
+        grid-column: 2/6;
+        grid-row: 1/3;
     }
 
     .problem-statement-text-content{
-grid-column: 4/6;
+grid-column: 1/3;
+grid-row: 2/4;
     }
 
     .problem-statement-text-content .card-body{
@@ -91,4 +104,6 @@ grid-column: 4/6;
     .case-study-project-goals-grid .card:nth-child(even){
 margin-top: 3rem;
     }
+
+  
 }
