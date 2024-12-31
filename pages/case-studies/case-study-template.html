@@ -91,16 +91,16 @@
             <h2 class="text-center mx-auto">Design Process</h2>
             <ul class="nav nav-tabs" id="designprocess" role="tablist">
               <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="empathize-tab" data-bs-toggle="tab" data-bs-target="#empathize-tab-pane" type="button" role="tab" aria-controls="empathize-tab-pane" aria-selected="true">Empathize</button>
+                <button class="nav-link active" id="empathize-tab" data-bs-toggle="tab" data-bs-target="#empathize-tab-pane" type="button" role="tab" aria-controls="empathize-tab-pane" aria-selected="true"> <span>1. Empathize</span><span class="ms-1 fa-solid fa-arrow-right"></span></button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link" id="define-tab" data-bs-toggle="tab" data-bs-target="#define-tab-pane" type="button" role="tab" aria-controls="define-tab-pane" aria-selected="false">Define</button>
+                <button class="nav-link" id="define-tab" data-bs-toggle="tab" data-bs-target="#define-tab-pane" type="button" role="tab" aria-controls="define-tab-pane" aria-selected="false"> <span>2. Define</span><span class="ms-1 fa-solid fa-arrow-right"></span></button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link" id="ideate-tab" data-bs-toggle="tab" data-bs-target="#ideate-tab-pane" type="button" role="tab" aria-controls="ideate-tab-pane" aria-selected="false">Ideate</button>
+                <button class="nav-link" id="ideate-tab" data-bs-toggle="tab" data-bs-target="#ideate-tab-pane" type="button" role="tab" aria-controls="ideate-tab-pane" aria-selected="false"> <span>3. Ideate</span><span class="ms-1 fa-solid fa-arrow-right"></span></button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link" id="design-tab" data-bs-toggle="tab" data-bs-target="#design-tab-pane" type="button" role="tab" aria-controls="design-tab-pane" aria-selected="false">Design</button>
+                <button class="nav-link" id="design-tab" data-bs-toggle="tab" data-bs-target="#design-tab-pane" type="button" role="tab" aria-controls="design-tab-pane" aria-selected="false"> <span>4. Design</span><span class="ms-1 fa-solid fa-arrow-right"></span></button>
               </li>
               <li class="nav-item" role="presentation">
                 <button class="nav-link" id="test-tab" data-bs-toggle="tab" data-bs-target="#test-tab-pane" type="button" role="tab" aria-controls="test-tab-pane" aria-selected="false">Test</button>
@@ -108,9 +108,9 @@
             </ul>
             <div class="tab-content bg-primary-subtle p-3 rounded shadow-lg" id="designprocessContent">
               <div class="tab-pane fade show active" id="empathize-tab-pane" role="tabpanel" aria-labelledby="empathize-tab" tabindex="0"> 
-                <p class="fw-bolder">User Research and Competitive Analysis </p>
+                <h4 class="h5">Customer Challenges</h4>
                 <p>Conducted in-depth research to understand the challenges and pain points faced by participants interviewed.</p>
-                <div class="pain-points-highlights-wrapper"> 
+                <div class="pain-points-highlights-wrapper mb-5"> 
                   <ul class="list-group pain-points list-group-flush">
                     <li class="list-group-item"> <span class="icon fa-solid fa-face-frown text-danger me-2"> </span><span class="description">Pain point item goes here</span></li>
                     <li class="list-group-item"> <span class="icon fa-solid fa-face-frown text-danger me-2"> </span><span class="description">Pain point item goes here</span></li>
@@ -124,10 +124,139 @@
                     <li class="list-group-item"> <span class="icon fa-solid fa-face-smile text-success me-2"> </span><span class="description">Highlight point item goes here</span></li>
                   </ul>
                 </div>
+                <div class="competitive-analysis-wrapper">
+                  <h4 class="h5">Competitive Analysis </h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, consequatur in! Ipsa, eaque provident? Quidem id magnam doloremque distinctio at! </p>
+                  <div class="table-responsive"> 
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th scope="col">Company</th>
+                          <th scope="col">Company 1</th>
+                          <th scope="col">Company 2</th>
+                          <th scope="col">Company 3</th>
+                          <th scope="col">Company 4</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">UI</th>
+                          <td> <span class="fa-solid fa-circle-check text-success"></span></td>
+                          <td> <span class="fa-solid fa-circle-check text-success"></span></td>
+                          <td> <span class="fa-solid fa-circle-check text-success"></span></td>
+                          <td> <span class="fa-solid fa-circle-check text-success"></span></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">UX</th>
+                          <td> <span class="fa-solid fa-circle-check text-success"></span></td>
+                          <td> <span class="fa-solid fa-circle-check text-success"></span></td>
+                          <td> <span class="fa-solid fa-circle-check text-success"></span></td>
+                          <td> <span class="fa-solid fa-circle-check text-success"></span></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Search & Filtering</th>
+                          <td> <span class="fa-solid fa-circle-xmark text-danger"></span></td>
+                          <td> <span class="fa-solid fa-circle-check text-success"></span></td>
+                          <td> <span class="fa-solid fa-circle-check text-success"></span></td>
+                          <td> <span class="fa-solid fa-circle-check text-success"></span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
               <div class="tab-pane fade" id="define-tab-pane" role="tabpanel" aria-labelledby="define-tab" tabindex="0">
                 <p class="fw-bolder">Define</p>
                 <p>User Persona, Empathy Map and Problem Statement should go here.</p>
+                <div class="user-persona-wrapper">
+                  <div class="card user-info-card">
+                    <div class="card-body">
+                      <div class="avatar-image-wrapper"><img class="img-fluid rounded-circle" src="https://mighty.tools/mockmind-api/content/human/91.jpg" alt=""></div>
+                      <div class="avatar-meta my-3">
+                        <dl class="row mb-0"> 
+                          <dt class="col-5">Name: </dt>
+                          <dd class="col-7 mb-0"> 
+                            <p class="mb-0">User Name</p>
+                          </dd>
+                        </dl>
+                        <dl class="row mb-0"> 
+                          <dt class="col-5">Age: </dt>
+                          <dd class="col-7 mb-0"> 
+                            <p class="mb-0">51</p>
+                          </dd>
+                        </dl>
+                        <dl class="row mb-0"> 
+                          <dt class="col-5">Location: </dt>
+                          <dd class="col-7 mb-0"> 
+                            <p class="mb-0">Boise, Idaho</p>
+                          </dd>
+                        </dl>
+                        <dl class="row mb-0"> 
+                          <dt class="col-5">Occupation: </dt>
+                          <dd class="col-7 mb-0"> 
+                            <p class="mb-0">HVAC Installer</p>
+                          </dd>
+                        </dl>
+                        <dl class="row mb-0"> 
+                          <dt class="col-5">Education: </dt>
+                          <dd class="col-7 mb-0"> 
+                            <p class="mb-0">High School Diploma</p>
+                          </dd>
+                        </dl>
+                        <dl class="row mb-0"> 
+                          <dt class="col-5">Marital Status: </dt>
+                          <dd class="col-7 mb-0"> 
+                            <p class="mb-0">Divorced</p>
+                          </dd>
+                        </dl>
+                      </div>
+                      <p class="mb-0 avatar-summary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, hic.</p>
+                    </div>
+                  </div>
+                  <div class="card user-goals-card">
+                    <div class="card-header">Goals</div>
+                    <div class="card-body"> 
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item px-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                        <li class="list-group-item px-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                        <li class="list-group-item px-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                        <li class="list-group-item px-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                        <li class="list-group-item px-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                        <li class="list-group-item px-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card user-challenges-card">
+                    <div class="card-header">Challenges</div>
+                    <div class="card-body"> 
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item px-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                        <li class="list-group-item px-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                        <li class="list-group-item px-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                        <li class="list-group-item px-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                        <li class="list-group-item px-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card user-behavior-card"> 
+                    <div class="card-header">Behavior</div>
+                    <div class="card-body"> 
+                      <ul class="list-group list-group-flush"></ul>
+                      <li class="list-group-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea natus voluptatum asperiores fugit eveniet repudiandae consequatur laudantium ratione assumenda magni?</li>
+                      <li class="list-group-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea natus voluptatum asperiores fugit eveniet repudiandae consequatur laudantium ratione assumenda magni?</li>
+                      <li class="list-group-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea natus voluptatum asperiores fugit eveniet repudiandae consequatur laudantium ratione assumenda magni?</li>
+                    </div>
+                  </div>
+                  <div class="card user-motivation-card"> 
+                    <div class="card-header">Motivation</div>
+                    <div class="card-body"> 
+                      <ul class="list-group list-group-flush"></ul>
+                      <li class="list-group-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea natus voluptatum asperiores fugit eveniet repudiandae consequatur laudantium ratione assumenda magni?</li>
+                      <li class="list-group-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea natus voluptatum asperiores fugit eveniet repudiandae consequatur laudantium ratione assumenda magni?</li>
+                      <li class="list-group-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea natus voluptatum asperiores fugit eveniet repudiandae consequatur laudantium ratione assumenda magni?</li>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="tab-pane fade" id="ideate-tab-pane" role="tabpanel" aria-labelledby="ideate-tab" tabindex="0"> 
                 <p class="fw-bolder">Ideate</p>

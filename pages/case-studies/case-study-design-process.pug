@@ -1,32 +1,37 @@
 ul#designprocess.nav.nav-tabs(role='tablist')
   li.nav-item(role='presentation')
-    button#empathize-tab.nav-link.active(data-bs-toggle='tab' data-bs-target='#empathize-tab-pane' type='button' role='tab' aria-controls='empathize-tab-pane' aria-selected='true') Empathize
+    button#empathize-tab.nav-link.active(data-bs-toggle='tab' data-bs-target='#empathize-tab-pane' type='button' role='tab' aria-controls='empathize-tab-pane' aria-selected='true') 
+        span 1. Empathize
+        span.ms-1.fa-solid.fa-arrow-right
   li.nav-item(role='presentation')
-    button#define-tab.nav-link(data-bs-toggle='tab' data-bs-target='#define-tab-pane' type='button' role='tab' aria-controls='define-tab-pane' aria-selected='false') Define
+    button#define-tab.nav-link(data-bs-toggle='tab' data-bs-target='#define-tab-pane' type='button' role='tab' aria-controls='define-tab-pane' aria-selected='false') 
+        span 2. Define
+        span.ms-1.fa-solid.fa-arrow-right
   li.nav-item(role='presentation')
-    button#ideate-tab.nav-link(data-bs-toggle='tab' data-bs-target='#ideate-tab-pane' type='button' role='tab' aria-controls='ideate-tab-pane' aria-selected='false') Ideate
+    button#ideate-tab.nav-link(data-bs-toggle='tab' data-bs-target='#ideate-tab-pane' type='button' role='tab' aria-controls='ideate-tab-pane' aria-selected='false') 
+        span 3. Ideate
+        span.ms-1.fa-solid.fa-arrow-right
   li.nav-item(role='presentation')
-    button#design-tab.nav-link(data-bs-toggle='tab' data-bs-target='#design-tab-pane' type='button' role='tab' aria-controls='design-tab-pane' aria-selected='false') Design
+    button#design-tab.nav-link(data-bs-toggle='tab' data-bs-target='#design-tab-pane' type='button' role='tab' aria-controls='design-tab-pane' aria-selected='false') 
+        span 4. Design
+        span.ms-1.fa-solid.fa-arrow-right
   li.nav-item(role='presentation')
     button#test-tab.nav-link(data-bs-toggle='tab' data-bs-target='#test-tab-pane' type='button' role='tab' aria-controls='test-tab-pane' aria-selected='false') Test
 #designprocessContent.tab-content.bg-primary-subtle.p-3.rounded.shadow-lg
   #empathize-tab-pane.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='empathize-tab' tabindex='0') 
-    p.fw-bolder User Research and Competitive Analysis 
+    h4.h5 Customer Challenges
     p Conducted in-depth research to understand the challenges and pain points faced by participants interviewed.
-    .pain-points-highlights-wrapper 
-        ul.list-group.pain-points.list-group-flush
-            -for(i=0; i<4; i++) 
-                li.list-group-item 
-                    span.icon.fa-solid.fa-face-frown.text-danger.me-2 
-                    span.description Pain point item goes here
-        ul.list-group.pain-points.list-group-flush
-            -for(i=0; i<4; i++) 
-                li.list-group-item 
-                    span.icon.fa-solid.fa-face-smile.text-success.me-2 
-                    span.description Highlight point item goes here
+    include ../case-studies/components/pain-points.pug
+    .competitive-analysis-wrapper
+        h4.h5 Competitive Analysis 
+        p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, consequatur in! Ipsa, eaque provident? Quidem id magnam doloremque distinctio at! 
+        include ../case-studies/components/competitive-analysis-table.pug
+
   #define-tab-pane.tab-pane.fade(role='tabpanel' aria-labelledby='define-tab' tabindex='0')
     p.fw-bolder Define
     p User Persona, Empathy Map and Problem Statement should go here.
+    include ../case-studies/components/user-persona.pug
+
   #ideate-tab-pane.tab-pane.fade(role='tabpanel' aria-labelledby='ideate-tab' tabindex='0') 
     p.fw-bolder Ideate
     p User Flow and Information Architecture visuals go here.
